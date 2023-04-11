@@ -5,6 +5,10 @@ https://developer.apple.com/library/content/documentation/NetworkingInternet/Con
 """
 
 import time
+import collections
+
+collections.Iterable = collections.abc.Iterable
+collections.Mapping = collections.abc.Mapping
 
 from apns2 import client as apns2_client
 from apns2 import credentials as apns2_credentials
